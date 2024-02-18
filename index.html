@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahfeedh School FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+    
+body {
+background-color:wheat;
+
+
+}
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.faq-section {
+    margin-bottom: 20px;
+}
+
+.question {
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+}
+
+.answer.open {
+    display: block;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Al-Furqon Tahfeedh School FAQ</h1>
+    </header>
+
+    <audio id="quran-audio" autoplay loop>
+        <source src="017009.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <main>
+        <div class="faq-section">
+            <h2 class="question">What is the admission process?</h2>
+            <div class="answer">The admission process involves filling out an application form, attending an interview, and completing any necessary assessments.</div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="question">What are the school hours?</h2>
+            <div class="answer">School hours are from 8:00 AM to 3:00 PM, Monday through Friday.</div>
+        </div>
+        <div class="faq-section">
+            <h2 class="question">Are uniforms required?</h2>
+            <div class="answer">Yes, students are required to wear the school uniform.</div>
+        </div>
+
+                
+        <div class="faq-section">
+            <h2 class="question">What is Qur'an Tahfeedh and why is it important?</h2>
+            <div class="answer">Qur'an Tahfeedh is the memorization of the Qur'an, and it's important for preserving the words of Allah, spiritual growth, and closeness to Him.</div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="question">What teaching methods are employed in our Qur'an Tahfeedh school?</h2>
+            <div class="answer">We utilize traditional methods such as repetition, recitation, and personalized instruction with qualified teachers.</div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="question">What age groups do we cater to in our Qur'an Tahfeedh program?</h2>
+            <div class="answer">Our program accommodates students of various age groups, typically starting from age 5 or 6.</div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="question">How long does it generally take for a student to memorize the entire Qur'an?</h2>
+            <div class="answer">The time varies for each student, but it usually takes several years of consistent effort and practice.</div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="question">Are there any prerequisites for enrollment in our Qur'an Tahfeedh school?</h2>
+            <div class="answer">Students should have a basic understanding of Arabic and be able to recite the Qur'an fluently with proper pronunciation.</div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="question">Do we provide certification upon completion of the Qur'an Tahfeedh program?</h2>
+            <div class="answer">Yes, we offer certification upon the completion of memorizing the entire Qur'an or at various milestones of memorization.</div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="question">What kind of support do we offer to students who may struggle with memorization?</h2>
+            <div class="answer">We provide individualized support, additional resources, and encouragement to students facing challenges in memorization.</div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="question">Do we offer online Qur'an Tahfeedh classes for remote learners?</h2>
+            <div class="answer">Yes, we provide online classes to accommodate students who are unable to attend in person.</div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="question">How can parents support their children enrolled in our Qur'an Tahfeedh program?</h2>
+            <div class="answer">Parents can create a conducive learning environment at home, encourage regular practice, and show enthusiasm for their child's progress.</div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="question">Are there any extracurricular activities offered at our Qur'an Tahfeedh school?</h2>
+            <div class="answer">Yes, we offer extracurricular activities such as Islamic lectures, community service projects, and Qur'an competitions.</div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="question">How can parents enroll their children in our Qur'an Tahfeedh school?</h2>
+            <div class="answer">Parents can enroll their children by contacting us directly or visiting our website to learn about the enrollment process and requirements.</div>
+        </div>
+
+       
+            </main>
+
+            
+            
+
+    <script>
+    
+
+        
+    document.addEventListener("DOMContentLoaded", function() {
+    const audio = document.getElementById('quran-audio');
+    audio.volume = 0.04; 
+});
+
+
+    
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const questions = document.querySelectorAll('.question');
+
+            questions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = question.nextElementSibling;
+                    answer.classList.toggle('open');
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
