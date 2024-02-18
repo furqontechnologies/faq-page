@@ -9,7 +9,7 @@
     <style>
     
 body {
-background-color:wheat;
+background-color:white;
 
 
 }
@@ -46,7 +46,9 @@ main {
 .answer.open {
     display: block;
 }
-
+.audio-placeholder {
+    display: none;
+}
 
 
     </style>
@@ -56,10 +58,10 @@ main {
         <h1>Al-Furqon Tahfeedh School FAQ</h1>
     </header>
 
-    <audio id="quran-audio" autoplay loop>
-        <source src="017009.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
+    <audio id="quran-audio" autoplay loop volume="0.05" class="audio-placeholder">
+    <source src="017009.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
     <main>
         <div class="faq-section">
             <h2 class="question">What is the admission process?</h2>
@@ -138,15 +140,6 @@ main {
             
 
     <script>
-    
-
-        
-    document.addEventListener("DOMContentLoaded", function() {
-    const audio = document.getElementById('quran-audio');
-    audio.volume = 0.04; 
-});
-
-
     
 
         document.addEventListener("DOMContentLoaded", function() {
